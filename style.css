@@ -1,0 +1,182 @@
+*,*:after,*:before{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    font-family: arial;
+    font-size: 16px;
+    margin: 0;
+    background: #27175a;
+    color: #fff;
+}
+.loader{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loader-box{
+    text-align: center;
+}
+.loader-box span{
+    display: block;
+    margin-top: 100px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.heart{
+    position: relative;
+    width: 50px;
+}
+[class*="heart-"]{
+    position: absolute;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+}
+.heart-pic0{
+    background-color: #bf3312;
+    left: 0;
+    animation-delay: 0s !important;
+}
+.heart-pic1{
+    background-color: #e83a59;
+    left: 15px;
+    animation-delay: 0.15 !important;
+}
+.heart-pic2{
+    background-color: #51e1ed;
+    left: 30px;
+    animation-delay: 0.30s !important;
+}
+.heart-pic3{
+    background-color: #5da3fa;
+    left: 45px;
+    animation-delay: 0.45s !important;
+}
+.heart-pic4{
+    background-color: #3dbe29;
+    left: 60px;
+    animation-delay: 0.60s !important; 
+}
+.heart-pic5{
+    background-color: #22cb5c;
+    left: 75px;
+    animation-delay: 0.75s!important;
+}
+.heart-pic6{
+    background-color: #edc126;
+    left: 90px;
+    animation-delay: 0.90s !important;
+}
+.heart-pic7{
+    background-color: #c7c11a;
+    left: 105px;
+    animation-delay: 1.05s !important;
+}
+.heart-pic8{
+    background-color: #e03b8b;
+    left: 120px;
+    animation-delay: 1.20s !important;
+}
+
+.heart-pic0,
+.heart-pic8{
+    top: -15px;
+    height: 30px;
+    animation: pic0 3.2s infinite;
+}
+.heart-pic0,
+.heart-pic8{
+    top: -15px;
+    height: 30px;
+    animation: pic0 3.2s infinite;
+}
+.heart-pic1,
+.heart-pic7{
+    top: -30px;
+    height: 60px;
+    animation: pic1 3.2s infinite;
+}
+.heart-pic2,
+.heart-pic6{
+    top: -38px;
+    height: 80px;
+    animation: pic2 3.2s infinite;
+}
+.heart-pic3,
+.heart-pic5{
+    top: -30px;
+    height: 90px;
+    animation: pic3 3.2s infinite;
+}
+.heart-pic4{
+    top: -20px;
+    height: 95px;
+    animation: pic4 3.2s infinite;
+}
+@keyframes pic0{
+    0%, 10%, 90%, 100%{
+        height: 10px;
+        top: 0;
+    }
+    40%,50%{
+        height: 30px;
+        top: -15px;
+    }
+}
+@keyframes pic0{
+    0%, 10%, 90%, 100%{
+        height: 10px;
+        top: 0;
+    }
+    40%,50%{
+        height: 30px;
+        top: -15px;
+    }
+}
+@keyframes pic1{
+    0%, 10%, 90%, 100%{
+        height: 10px;
+        top: 0;
+    }
+    40%,50%{
+        top: -30px;
+        height: 60px;
+    }
+}
+@keyframes pic2{
+    0%, 10%, 90%, 100%{
+        height: 10px;
+        top: 0;
+    }
+    40%,50%{
+        top: -38px;
+        height: 80px;
+    }
+}
+@keyframes pic3{
+    0%, 10%, 90%, 100%{
+        height: 10px;
+        top: 0;
+    }
+    40%,50%{
+        top: -30px;
+        height: 90px;
+    }
+}@keyframes pic4{
+    0%, 10%, 90%, 100%{
+        height: 10px;
+        top: 0;
+    }
+    40%,50%{
+        top: -20px;
+        height: 95px;
+    }
+}
+
